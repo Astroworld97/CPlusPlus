@@ -1,0 +1,36 @@
+Hello Ian! Welcome back to your C++ journey! This is you from the past. I hope you get to meet Elon Musk sometime soon!
+
+Notes:
+
+1. To compile, write "g++" in the terminal, followed by a space, followed by the .cpp filename.
+2. To run after compiling, write "./a.out" in the terminal.
+3. Remember: references ≠ pointers!!!
+4. A reference variable is a "reference" to an existing variable, and it is created with the & operator.
+More info on references: https://www.w3schools.com/CPP/cpp_references.asp
+
+Example:
+
+string food = "Pizza";  // food variable
+string &meal = food;    // reference to food variable
+cout << food << "\n";  // Outputs Pizza
+cout << meal << "\n";  // Outputs Pizza
+
+5. To get the memory address of a variable, do the following: 
+cout << &food; // Outputs 0x6dfed4, or some hexadecimal number resembling it
+6. A pointer is a variable that stores the memory address as its value.
+7. A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. 
+8. The address of the variable you're working with is assigned to the pointer.
+
+Example: 
+
+string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
+
+// Output the value of food (Pizza)
+cout << food << "\n";
+
+// Output the memory address of food (0x6dfed4)
+cout << &food << "\n";
+
+// Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+
